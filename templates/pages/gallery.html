@@ -1,0 +1,282 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Cute+Font|Great+Vibes&display=swap" rel="stylesheet">
+
+<div class="bag-image"></div>
+<p class="gallery"> <span>G</span>all<span></span>er<span>y</span></p>
+<p class="insp"> <span>F</span>ind <span>Y</span>our <span>I</span>nspiration</p>
+
+<div id="accordion">
+    <div id="jumbo" class="jumbotron py-3">
+        <div class="row">
+            <div class="container col-12 text-center">
+                <hr>
+                <button class="button-1 btn-link collapsed" onclick="smoothScroll(document.getElementById('scroll'))" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">kitchens</button>
+                <button class="button-1 btn-link collapsed" onclick="smoothScroll(document.getElementById('scroll'))" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Bedrooms</button>
+                <button class="button-1 btn-link collapsed" onclick="smoothScroll(document.getElementById('scroll'))" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">TV Units</button>
+                <button class="button-1 btn-link collapsed" onclick="smoothScroll(document.getElementById('scroll'))" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">False Ceil</button>
+                <hr id="scroll">
+            </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="row">
+                <div class="column">
+                    <img src="{% static 'imgs/kitchens/img4.jpg' %}" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="">
+                    <img src="{% static 'imgs/kitchens/img3.jpg' %}" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" alt="">
+                    <img src="{% static 'imgs/kitchens/img2.jpg' %}" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" alt="">
+                    <img src="{% static 'imgs/kitchens/img1.jpg' %}" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" alt="">
+                </div>
+                <div class="column">
+                    <img src="{% static 'imgs/kitchens/img5.jpg' %}" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" alt="">
+                    <img src="{% static 'imgs/kitchens/img6.jpg' %}" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" alt="">
+                    <img src="{% static 'imgs/kitchens/img7.jpg' %}" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" alt="">
+                    <img src="{% static 'imgs/kitchens/img8.jpg' %}" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor" alt="">
+                </div>
+                <div id="scroll1" class="column">
+                    <img src="{% static 'imgs/kitchens/img9.jpg' %}" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="">
+                    <img src="{% static 'imgs/kitchens/img10.jpg' %}" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" alt="">
+                    <img src="{% static 'imgs/kitchens/img11.jpg' %}" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor" alt="">
+                    <img src="{% static 'imgs/kitchens/img12.jpg' %}" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="row">
+                        <div class="column">
+                            <img src="{% static 'imgs/bedrooms/img1.jpg' %}" onclick="openModal();currentSlide(13)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/bedrooms/img4.jpg' %}" onclick="openModal();currentSlide(16)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/bedrooms/img3.jpg' %}" onclick="openModal();currentSlide()" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/bedrooms/img4.jpg' %}" onclick="openModal();currentSlide()" class="hover-shadow cursor" alt="">
+                        </div>
+                        <div class="column">
+                            <img src="{% static 'imgs/bedrooms/img2.jpg' %}" onclick="openModal();currentSlide(14)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/bedrooms/img5.jpg' %}" onclick="openModal();currentSlide(17)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/paint.png' %}" onclick="openModal();currentSlide()" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/paint.png' %}" onclick="openModal();currentSlide()" class="hover-shadow cursor" alt="">
+                        </div>
+                        <div class="column">
+                            <img src="{% static 'imgs/bedrooms/img3.jpg' %}" onclick="openModal();currentSlide(15)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/bedrooms/img6.jpg' %}" onclick="openModal();currentSlide(18)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/paint.png' %}" onclick="openModal();currentSlide()" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/paint.png' %}" onclick="openModal();currentSlide()" class="hover-shadow cursor" alt="">
+                        </div>
+                    </div>
+                </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="row">
+                        <div class="column">
+                            <img src="{% static 'imgs/TV-units/img1.jpg' %}" onclick="openModal();currentSlide(19)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img4.jpg' %}" onclick="openModal();currentSlide(22)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img7.jpg' %}" onclick="openModal();currentSlide(25)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img10.jpg' %}" onclick="openModal();currentSlide(28)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img13.jpg' %}" onclick="openModal();currentSlide(31)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img16.jpg' %}" onclick="openModal();currentSlide(34)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img19.jpg' %}" onclick="openModal();currentSlide(37)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img22.jpg' %}" onclick="openModal();currentSlide(40)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img25.jpg' %}" onclick="openModal();currentSlide(43)" class="hover-shadow cursor" alt="">
+
+                        </div>
+                        <div class="column">
+                            <img src="{% static 'imgs/TV-units/img2.jpg' %}" onclick="openModal();currentSlide(20)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img5.jpg' %}" onclick="openModal();currentSlide(23)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img8.jpg' %}" onclick="openModal();currentSlide(26)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img11.jpg' %}" onclick="openModal();currentSlide(29)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img14.jpg' %}" onclick="openModal();currentSlide(32)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img17.jpg' %}" onclick="openModal();currentSlide(35)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img20.jpg' %}" onclick="openModal();currentSlide(38)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img23.jpg' %}" onclick="openModal();currentSlide(41)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img26.jpg' %}" onclick="openModal();currentSlide(44)" class="hover-shadow cursor" alt="">
+
+                        </div>
+                        <div class="column">
+                            <img src="{% static 'imgs/TV-units/img3.jpg' %}" onclick="openModal();currentSlide(21)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img6.jpg' %}" onclick="openModal();currentSlide(24)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img9.jpg' %}" onclick="openModal();currentSlide(27)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img12.jpg' %}" onclick="openModal();currentSlide(30)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img15.jpg' %}" onclick="openModal();currentSlide(33)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img18.jpg' %}" onclick="openModal();currentSlide(36)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img21.jpg' %}" onclick="openModal();currentSlide(39)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img24.jpg' %}" onclick="openModal();currentSlide(42)" class="hover-shadow cursor" alt="">
+                            <img src="{% static 'imgs/TV-units/img27.jpg' %}" onclick="openModal();currentSlide(45)" class="hover-shadow cursor" alt="">
+
+                        </div>
+                    </div>
+        </div>
+
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="row">
+                        <div class="column">
+                            <img src="{% static 'imgs/metal.png' %}" alt="">
+                            <img src="{% static 'imgs/metal.jpg' %}" alt="">
+                            <img src="{% static 'imgs/metal.png' %}" alt="">
+                            <img src="{% static 'imgs/metal.jpg' %}" alt="">
+                        </div>
+                        <div class="column">
+                            <img src="{% static 'imgs/metal.jpg' %}" alt="">
+                            <img src="{% static 'imgs/metal.png' %}" alt="">
+                            <img src="{% static 'imgs/metal.jpg' %}" alt="">
+                            <img src="{% static 'imgs/metal.png' %}" alt="">
+                        </div>
+                        <div class="column">
+                            <img src="{% static 'imgs/paint.png' %}" alt="">
+                            <img src="{% static 'imgs/paint.jpg' %}" alt="">
+                            <img src="{% static 'imgs/metal.png' %}" alt="">
+                            <img src="{% static 'imgs/metal.png' %}" alt="">
+                        </div>
+                  </div>
+              </div>
+         </div>
+             
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&#10005;</span>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="modal-content">
+          <div class="mySlides">
+            <img src="{% static 'imgs/kitchens/img4.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/kitchens/img5.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/kitchens/img9.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/kitchens/img3.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/kitchens/img6.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/kitchens/img10.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/kitchens/img2.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/kitchens/img7.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/kitchens/img11.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/kitchens/img1.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/kitchens/img8.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/kitchens/img12.jpg' %}" style="width:100%">
+          </div>
+
+          <!-- Bedrooms -->
+          <div class="mySlides">
+            <img src="{% static 'imgs/bedrooms/img1.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/bedrooms/img2.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/bedrooms/img3.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/bedrooms/img4.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/bedrooms/img5.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/bedrooms/img6.jpg' %}" style="width:100%">
+          </div>
+
+          <!-- tv-units -->
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img1.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img2.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img3.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img4.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img5.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img6.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img7.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img8.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img9.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img10.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img11.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img12.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img13.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img14.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img15.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img16.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img17.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img18.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img19.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img20.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img21.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img22.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img23.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img24.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img25.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img26.jpg' %}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <img src="{% static 'imgs/TV-units/img27.jpg' %}" style="width:100%">
+          </div>
+
+        </div>
+    </div>
+{% endblock %}

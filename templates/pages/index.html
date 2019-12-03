@@ -1,0 +1,293 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!-- COVER IMAGE -->
+    <div class="cover-image">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="reg-form d-none d-lg-block">
+                    <p class="form-title text-center">Get a free consultation</p>
+                    <div class="form-group">
+                        <input type="name" class="form-control" id="exampleInputName" placeholder="Name*">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email*">
+                    </div>
+                    <div class="form-group">
+                        <input type="numb" class="form-control" placeholder="Phone Number*">
+                    </div>
+                    <hr>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-block">Book consultation</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    
+    <!-- CONTACT INFO -->
+        <div class="row bg-light text-center py-3">
+            <div class="col-6 col-md-4">
+                <div class="contact-info">
+                    <a href="tel:+91-9741647894"><img src="{% static 'imgs/phone.svg' %}" alt=""> +91 9876543210</a>
+                </div>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <div class="contact-info">
+                    <p><img src="{% static 'imgs/location.svg' %}" alt=""> Bengaluru</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="contact-info">
+                    <a href="mailto:info@nestinteriors.com?subject=Enquiry about interiors -from website"><img src="{% static 'imgs/mail.svg' %}" alt=""> info@nestinteriors.in</a>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Quote -->
+    
+        <div class="container px-0 content"> 
+            <div class="row justify-content-center ">
+                <div class="col-lg-6 d-none d-lg-block mt-5">
+                    <img class="img-fluid" src="{% static 'imgs/img2.png' %}" alt="">
+                </div>
+                <div class="col-10 col-lg-6 text-center mt-3">
+                            <p class="lead"><span>I</span> see myself as a <span>S</span>toryteller. <span>C</span>lients hire me to write their <span>B</span>iographies, <span>B</span>ut instead of words i use <span>F</span>abrics, <span>W</span>ood, <span>A</span>rchitectural elements to them.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr id="scroll">
+        </div>
+    
+          
+    
+        <!-- Cards -->
+        <section class="container px-0">
+                <p id="serve" class="text-center">Our Services</p>
+                <hr>
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'imgs/residential.png' %}" alt="Card image cap">
+                        <div class="centered">
+                            <button class="button"><span>Residential Design</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'imgs/commercial.png' %}" alt="Card image cap">
+                        <div class="centered">
+                          <a href="commercial.html"><button class="button"><span>Commercial Design</span></button></a>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'imgs/ceiling.png' %}" alt="Card image cap">
+                        <div class="centered">
+                            <button class="button"><span>False Ceiling</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <section class="container px-0">
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'imgs/mep.png' %}" alt="Card image cap">
+                        <div class="centered">
+                            <button class="button"><span>MEP Designs</span></button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-10 col-md-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'imgs/paint.png' %}" alt="Card image cap">
+                        <div class="centered">
+                            <button class="button"><span>Paint & Wallpaper</span></button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-10 col-md-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'imgs/eg.jpg' %}" alt="Card image cap">
+                        <div class="centered">
+                            <button class="button"><span>Metal Fabrication</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- how it works -->
+        <section class="jumbotron bg-light text-center py-6">
+            <div class="container">
+                <p>Our Process</p>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img class="dimensions" src="{% static 'imgs/meet.svg' %}" alt="">
+                        <p>Meet</p>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="dimensions" src="{% static 'imgs/concept.svg' %}" alt="">
+                        <p>Idea & Concept</p>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="dimensions" src="{% static 'imgs/quote.svg' %}" alt="">
+                        <p>Get Quotation</p>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="dimensions" src="{% static 'imgs/check-mark.svg' %}" alt="">
+                        <p>Finalize Design</p>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="dimensions" src="{% static 'imgs/factory.svg' %}" alt="">
+                        <p>Factory Work</p>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="dimensions" src="{% static 'imgs/install.svg' %}" alt="">
+                        <p id="scroll-here">Installation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <section class="container">
+            <div class="row">
+                <div id="movePad" class="col-md-6 d-none d-lg-block">
+                    <div class="span6">
+                        <h1 class="display-1 text-center" style="font-weight: 100; margin-top:50%;"><span style="color: #00baff;">N</span>E<span style="color: #00baff;">S</span>T</h1>
+                    </div>
+                </div> 
+                <div class="col-md-6 " style="padding-left:20px; border-left: 1px solid lightgray;">
+                    <h2 class="text-center" style="font-weight: 100; padding-top:20px; padding-bottom: 10px;">Why Nest Interiors?</h2>                
+                    <div class="span6">
+                        <p><img class="icons" src="{% static 'imgs/delivery.svg' %}"><b>Move in 30 days</b> 
+                        <p>We complete the work fast in 30 days with finest details and without making any compromises.</p>
+                    </div>
+                    <div class="span6">
+                        <p><img class="icons" src="{% static 'imgs/warranty.svg' %}"><b>5 Years warranty</b> 
+                        <p>We use only the best materials and also We've given our word that we will respond to every warranty. We want happy customers.</p>
+                    </div>
+                    <div class="span6">
+                        <p><img class="icons" src="{% static 'imgs/price.svg' %}"><b>Affordable price</b> 
+                        <p>Our aim is to make Interiors at an affordable price with the best quality. We will charge lesser than the current market price. </p>
+                    </div>
+                    <div class="span6">
+                        <p><img class="icons" src="{% static 'imgs/expert.svg' %}"><b>Design Experts</b> 
+                        <p>Our designers help you visualize and execute your vision. They help create a perfect blend of design aesthetics and practical necessities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+     
+        <section class="container bg-light px-5">
+            <h4 class="para py-5 text-center">-Customer says-</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="span7">
+                        <p><img class="comment-icons" src="{% static 'imgs/customer icon.svg' %}">
+                        <p>If your thinking about Home interiors think of nest interior designers, they did awesome work at my apartment, mind blowing designs and they did end to end home interiors We thank all the Team of nest interiors Bangalore.</p>
+                        <p style="float: right;">- Nitesh kumar</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="span7">
+                        <p><img class="comment-icons" src="{% static 'imgs/customer icon.svg' %}">
+                        <p>We are very happy with the way our commercial space was designed. After meeting so many designers we are happy that we made our decision to go with nest interiors. Excellent service, timely response. The prices are affordable compared to others in the market</p>
+                        <p style="float: right;">- Ravi Kiran</p>                    
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="span7">
+                        <p><img class="comment-icons" src="{% static 'imgs/customer icon.svg' %}">
+                        <p>The entire project was wrapped up in 25 days, We moved into our new home earlier than the planned date.The high quality of the materials used is visible and felt while usage. The finish is really smooth and stylish, Thanks to the whole team.</p>
+                        <p style="float: right;">- Balakrishna</p>                    
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="span7">
+                        <p><img class="comment-icons" src="{% static 'imgs/customer icon.svg' %}">
+                        <p>Excellent work.They have done false ceiling, fabrication, wardrobe and modular kitchen for my house and I am very happy with their work. They have done many flats in my apartment and people are very happy with the quality of work and on time delivery.</p>
+                        <p style="float: right;">- Varun</p>                
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        
+    
+        <div class="arch text-center">
+            <p>READY TO MAKEOVER YOUR HOME? <a href="{% url 'contact' %}"><button class="btn float-right mr-5">Get Quotaion</button></a></p>         
+        </div>
+
+
+    <div class="footer">
+    <hr>
+        <div class="container pt-5">
+            <div class="row">
+                <div class="nest col-md-4 order-2 order-lg-1">
+                    <a class="d-none d-lg-block" >NEST</a>
+                    <div class="row">
+                        <div class="col-2 col-md-2">
+                            <img class="icon" src="{% static 'imgs/youtube.svg' %}">
+                        </div>
+                        <div class="col-2 col-md-2">
+                            <img class="icon" src="{% static 'imgs/twitter.svg' %}">
+                        </div>
+                        <div class="col-2 col-md-2">
+                            <img class="icon" src="{% static 'imgs/whatsapp.svg' %}">
+                        </div>
+                        <div class="col-2 col-md-2">
+                            <img class="icon" src="{% static 'imgs/facebook.svg' %}">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 mt-4 pt-5 order-1 order-lg-2">
+                <hr>
+                <div class="row">
+                    <div class="col-4 col-md-3">
+                        <a class="link" href="tel:+91-9741647894">+91 9741647894</a>
+                    </div>
+                    <div class="col-4 col-md-3"> 
+                        <a class="link" href="mailto:info@nestinteriors.com?subject=Enquiry about interiors - from website">info@nestinteriors.com</a>
+                    </div>
+                </div>    
+                <hr>
+                <div class="row">
+                    <div class="col-md-2 d-none d-lg-block">
+                        <a class="link" href="{% url 'index' %}" onclick="smoothScroll(document.getElementById('mainNavbar'))">HOME</a>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <a class="link" href="#" onclick="smoothScroll(document.getElementById('scroll'))">SERVICES</a>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <a class="link" href="{% url 'gallery' %}">GALLERY</a>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <a class="link" href="{% url 'gallery' %}">PROJECTS</a>
+                    </div>
+                    <div class="col-md-2 d-none d-lg-block">
+                        <a class="link" href="#" onclick="smoothScroll(document.getElementById('scroll-here'))">WHY NEST?</a>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <a class="link" href="{% url 'contact' %}">CONTACT</a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

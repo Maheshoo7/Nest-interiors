@@ -1,0 +1,72 @@
+html, body{
+    background: #f8f9fa;
+}
+/* registration form design */
+.reg-form {
+    color: black;
+    position: relative;
+    background-color: rgba(255, 255, 255);
+    margin-top: 10%;
+    padding:16px;
+    left: 0%;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.get-touch{
+    font-weight: 100;
+    font-size: 2rem;
+    text-transform:uppercase;
+    margin-top: 20px;
+}
+.sent {
+    font-size:1rem;
+    font-weight: 100;
+    margin-top: 30px;
+}
+.img-fluid {
+    width: 40%;
+    margin: 15px 0 0 0;
+}
+.get-touch span {
+    color: #00baff;
+    font-size: 3rem;
+}
+
+.form-row {
+    font-size: 14px;
+}
+
+/* changing the font size of placeholders */
+.form-control {
+    font-size: 14px;
+}
+
+/* registrtion form button styling */
+.reg-form .btn {
+    font-size: 14px;
+    background: rgb(0, 186, 255);
+    color: white;  
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* registration for button hover effect */
+.reg-form .btn:hover {
+    background: white;
+    border: 2px solid #00baff;
+    color: #00baff;
+}
+
+
+/* icon size */
+.contact-info img {
+    width: 25px;
+}
+
+.contact-info {
+    border-right: 1px solid #00baff;
+    border-left: 1px solid #00baff;
+    padding-top: 10px;
+}

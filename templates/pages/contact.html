@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 mt-5 text-center">
+            <p class="get-touch"><span>G</span>et <span>I</span>n <span>T</span>ouch <span>W</span>ith <span>U</span>s</p>
+            <img class="img-fluid" src="{% static 'imgs/get-in-touch.svg' %}" alt="">
+            <p class="sent"> Fill in the details, We will contact you as soon as possible with the approximate quotation. Or you can call/whatsapp us to the phone number given below... Keep Smiling :-)</p>
+        </div>
+        <div class="col-md-6 px-0">
+            <form>
+                <div class="reg-form">
+                    <p class="form-title py-2 text-center">Get a free consultation</p>
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <input type="name" class="form-control" id="exampleInputName" placeholder="Name*">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email*">
+                        </div>
+                    </div>
+                    <div class="form-row mt-3">
+                        <div class="col-md-6">
+                            <input type="numb" class="form-control" placeholder="Phone Number*">
+                        </div>    
+                        <div class="col-md-6">
+                            <input type="name" class="form-control" placeholder="Area*">
+                        </div>   
+                    </div>
+                    <hr>
+                    <p>Here for...</p>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-2">
+                            <div class="form-check form-check-inline" data-toggle="collapse" href="#collapseExample" role="checkbox" aria-expanded="false" aria-controls="collapseExample">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Residential Design</label>
+                            </div>   
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2"> Office Design</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3"> False Ceiling</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                                <label class="form-check-label" for="inlineCheckbox4"> Paint and wallpaper</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                                <label class="form-check-label" for="inlineCheckbox5"> MEP Design</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                                <label class="form-check-label" for="inlineCheckbox6"> Metal Fabrication</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="collapse" id="collapseExample">
+                        <p>Select..</p>
+                        <div class="form-row">
+                            <div class="col-md-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
+                                    <label class="form-check-label" for="inlineCheckbox7"> 1 BHK</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8">
+                                    <label class="form-check-label" for="inlineCheckbox8"> 2 BHK</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option9">
+                                <label class="form-check-label" for="inlineCheckbox9"> 3 BHK</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option10">
+                                <label class="form-check-label" for="inlineCheckbox10"> Others</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    </div>
+                    <p>choose...</p>
+                    <div class="form-row">
+                        <div class="col-md-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+                                <label class="form-check-label" for="inlineCheckbox11"> Premium</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox12" value="option12">
+                                <label class="form-check-label" for="inlineCheckbox12"> Moderate</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox13" value="option13">
+                                <label class="form-check-label" for="inlineCheckbox13"> Budget</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>                                 
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-block">Book consultation</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+      <!-- CONTACT INFO -->
+    <div class="row text-center mt-5 py-3">
+        <div class="col-md-4">
+            <div class="contact-info">
+                <p><img src="{% static 'imgs/phone.svg' %}" alt=""> +91 9876543210</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="contact-info">
+                <p><img src="{% static 'imgs/location.svg' %}" alt=""> Bengaluru</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="contact-info">
+                <p><img src="{% static 'imgs/mail.svg' %}" alt=""> info@nestinteriors.in</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

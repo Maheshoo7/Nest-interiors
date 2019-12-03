@@ -1,0 +1,192 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+}
+
+.bag-image {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),url(../imgs/gallery-cover.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    color: #00baff;
+    font-size: 8rem;
+    font-family: 'Great Vibes', cursive;
+}
+ 
+.insp span {
+    color: #00baff;
+}
+
+.insp {
+    position: absolute;
+    top: 52%;
+    left: 37%;
+    color: black;
+    font-family: 'Cute Font', cursive;
+    font-size: 4rem;
+}
+
+#jumbo {
+    position: absolute;
+    top:80%;
+    left: 15%;
+    background: none;
+}
+
+.button-1 {
+    text-decoration: none;
+    border: none;
+    color: white;
+    background-color: rgba(0, 186, 255, 0.7);
+    padding: 7px 70px;
+    margin-right: 10px;
+}
+
+.button-1:hover{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 186, 255);
+    border: 1px solid #00baff;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.column img:hover{
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+img {
+    width: 20%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9)
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  max-width: 900px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+  font-size: 20px;
+  cursor: pointer;
+  width: auto;
+  padding: 15px 20px;
+  transition: 0.6s ease;
+  border-radius: 50px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev {
+    left: 5%;
+    top: 350px;
+}
+
+.next {
+    top: 350px;
+    left: 85%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover,
+.next:focus,
+.prev:focus {
+
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.modal-content {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }

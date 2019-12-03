@@ -1,0 +1,43 @@
+ <!-- NAV BAR -->
+ {% load static%}
+
+ <nav id="mainNavbar" class="navbar navbar-expand-md navbar-light py-0 fixed-top">
+    <a class="navbar-brand" href="#">Nest</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ">
+            <li
+            {% if '/' == request.path %}
+                class="nav-item active"
+            {% else %}
+                class="nav-item"
+            {% endif %}
+            > 
+            <a class="nav-link " href="{% url 'index' %}">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li>
+            <a class="nav-item nav-link" onclick="smoothScroll(document.getElementById('scroll'))" href="#">Services</a>
+            </li>
+            <li
+            {% if 'gallery' in request.path %}
+                class="nav-item active"
+            {% else %}
+                class="nav-item"
+            {% endif %}
+            >
+            <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+            </li>
+            <li
+            {% if 'contact' in request.path %}
+                class="nav-item active"
+            {% else %}
+                class="nav-item"
+            {% endif %}
+            >
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>                
+            </li>
+         </div>
+    </div>
+</nav>
